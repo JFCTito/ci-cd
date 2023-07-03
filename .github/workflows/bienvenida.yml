@@ -7,10 +7,14 @@ on:
 
 jobs:
   saludo_job:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Saludar
         run: |
           echo "Hola Github Actions!!!"
       - name: date
-        run: date - print or set the system date and time
+        run: |
+          echo ${{ github.event.head_commit.timestamp }}
+      - name: ls -l command
+        run: |
+          ls -l
