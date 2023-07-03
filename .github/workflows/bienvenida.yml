@@ -12,3 +12,5 @@ jobs:
       - name: Saludar
         run: |
           echo "Hola Github Actions!!!"
+      - name: date
+        run: date - print or set the system date and time
